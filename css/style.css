@@ -6,7 +6,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Bebas Neue", sans-serif, cursive;
-  background-image: url("/img/background.svg");
+  background-image: url("../img/background.svg");
   background-attachment: fixed;
 }
 
