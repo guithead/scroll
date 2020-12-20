@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Bebas Neue", sans-serif, cursive;
+  background-image: url("/img/background.svg");
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+}
+
+/*loader wrapper = overlay*/
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 288, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  margin: 1rem 25%;
+  margin-top: 0;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .image-container {
+    margin: 1rem;
+  }
+  .image-container img:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+}
